@@ -3,20 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Pierwsza Strona</title>
+    <title>Milosz - Moje Linki</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
             background: #f0f0f0;
+            margin: 0;
+            padding: 40px 20px;
             text-align: center;
         }
-        h1 { color: #2c3e50; }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        .code {
+            font-weight: bold;
+            color: #e74c3c;
+        }
     </style>
 </head>
 <body>
-    <h1>Erran to smiec</h1>
-    <p>z kodem milosz 1$ i 20% od depozytu na casehug.com</p>
+
+<div class="container">
+
+    <h1>🔥 Moje Polecane Linki 🔥</h1>
+
+    <div class="card">
+        <h2>CaseHug</h2>
+        <p>
+            Kasyno ze skinami do Counter-Strike.
+            Po rejestracji z mojego linku otrzymujesz
+            <span class="code">1$ gratis</span>
+            oraz
+            <span class="code">20% od depozytu</span>.
+        </p>
+
+        <a class="btn" href="https://casehug.com/r/MILOSZ" target="_blank">
+            Przejdź do CaseHug
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>iKako</h2>
+        <p>
+            Platforma do zamawiania produktów z Chin.
+            Użyj kodu:
+            <span class="code">miloszkokos</span>
+            i odbierz
+            <span class="code">15$ zniżki</span>.
+        </p>
+
+        <a class="btn" href="https://ikako.vip/r/sphhj" target="_blank">
+            Przejdź do iKako
+        </a>
+    </div>
+
+</div>
+
 </body>
 </html>
