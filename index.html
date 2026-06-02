@@ -1,99 +1,226 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milosz - Moje Linki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
-            margin: 0;
-            padding: 40px 20px;
-            text-align: center;
-        }
+<title>Milosz | Links</title>
 
-        .container {
-            max-width: 700px;
-            margin: auto;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 30px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+body{
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+        radial-gradient(circle at top left,#5b21b6 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#06b6d4 0%,transparent 35%),
+        #0f172a;
+    color:white;
+    padding:30px;
+}
 
-        .card h2 {
-            margin-top: 0;
-            color: #333;
-        }
+.container{
+    width:100%;
+    max-width:700px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
+.profile{
+    text-align:center;
+    margin-bottom:40px;
+}
 
-        .btn:hover {
-            background: #2980b9;
-        }
+.avatar{
+    width:120px;
+    height:120px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8b5cf6,#06b6d4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:42px;
+    font-weight:800;
+    box-shadow:0 0 40px rgba(139,92,246,.5);
+}
 
-        .code {
-            font-weight: bold;
-            color: #e74c3c;
-        }
-    </style>
+h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#94a3b8;
+    font-size:17px;
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:24px;
+    padding:24px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(255,255,255,0.25);
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+.card-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:12px;
+}
+
+.icon{
+    width:55px;
+    height:55px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+}
+
+.casehug{
+    background:linear-gradient(135deg,#f59e0b,#ef4444);
+}
+
+.ikako{
+    background:linear-gradient(135deg,#06b6d4,#3b82f6);
+}
+
+.card h2{
+    font-size:24px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#22c55e;
+    font-weight:700;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#8b5cf6,#3b82f6);
+    padding:14px 24px;
+    border-radius:14px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:30px;
+    text-align:center;
+    color:#64748b;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:32px;
+    }
+
+    .card{
+        padding:20px;
+    }
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <h1>🔥 Moje Polecane Linki 🔥</h1>
+    <div class="profile">
+        <div class="avatar">M</div>
 
-    <div class="card">
-        <h2>CaseHug</h2>
-        <p>
-            Kasyno ze skinami do Counter-Strike.
-            Po rejestracji z mojego linku otrzymujesz
-            <span class="code">1$ gratis</span>
-            oraz
-            <span class="code">20% od depozytu</span>.
+        <h1>Milosz</h1>
+
+        <p class="subtitle">
+            My favorite platforms, deals & referral links.
         </p>
-
-        <a class="btn" href="https://casehug.com/r/MILOSZ" target="_blank">
-            Przejdź do CaseHug
-        </a>
     </div>
 
-    <div class="card">
-        <h2>KakoBuy</h2>
-        <p>
-            Platforma do zamawiania produktów z Chin.
-            Użyj kodu:
-            <span class="code">miloszkokos</span>
-            i odbierz
-            <span class="code">15$ zniżki</span>.
-            Plus pakiet o wartości 420$
-        </p>
+    <div class="links">
 
-        <a class="btn" href="https://ikako.vip/r/sphhj" target="_blank">
-            Przejdź do KakoBuy
-        </a>
+        <div class="card">
+            <div class="card-header">
+                <div class="icon casehug">🎮</div>
+                <h2>CaseHug</h2>
+            </div>
+
+            <p>
+                Counter-Strike skin casino.
+                Sign up through my referral link and receive
+                <span class="highlight">$1 for free</span>
+                plus a
+                <span class="highlight">20% deposit bonus</span>.
+            </p>
+
+            <a class="btn"
+               href="https://casehug.com/r/MILOSZ"
+               target="_blank">
+               Claim Bonus →
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon ikako">📦</div>
+                <h2>iKako</h2>
+            </div>
+
+            <p>
+                Order products directly from China.
+                Use code
+                <span class="highlight">MILOSZKOKOS</span>
+                and get
+                <span class="highlight">$15 OFF</span>
+                your order.
+            </p>
+
+            <a class="btn"
+               href="https://ikako.vip/r/sphhj"
+               target="_blank">
+               Get Discount →
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Milosz • All Rights Reserved
     </div>
 
 </div>
